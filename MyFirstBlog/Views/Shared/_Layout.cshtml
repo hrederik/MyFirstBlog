@@ -1,48 +1,52 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - MyFirstBlog</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" />
-</head>
-<body>
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">MyFirstBlog</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
-    </div>
+<html>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2020 - MyFirstBlog - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-        </div>
-    </footer>
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
-    @RenderSection("Scripts", required: false)
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/style.min.css">
+	<meta name="viewport" content="width = device - width, initial-scale = 1.0">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Inconsolata&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
+		rel="stylesheet">
+	<meta charset="utf-8">
+</head>
+
+<body>
+	<header class="header">
+   <div class="container">
+      <div class="header__content">
+         <a href="#" class="header__logo">First Blog</a>
+         <nav class="header__menu main-nav">
+            <button class="main-nav__button"></button>
+            <ul>
+               <li class="main-nav__item"><a href="#">Razdel1</a> </li>
+               <li class="main-nav__item"><a href="#">Razdel2</a> </li>
+               <li class="main-nav__item"><a href="#">Razdel3</a> </li>
+               <li class="main-nav__item"><a href="#">Razdel4</a> </li>
+            </ul>
+         </nav>
+      </div>
+   </div>
+</header>
+	<main>
+
+	</main>
+	<footer class="footer">
+   <div class="container">
+      <div class="footer__content">
+         <ul class="footer__copyright copyright">
+            <li class="copyright__item"><a href="#">Terms and conditions</a></li>
+            <li class="copyright__item"><a href="#">Privacy</a></li>
+         </ul>
+         <ul class="footer__links">
+            <li class="footer__link"><a href="#"><picture><source srcset="img/footer/1.webp" type="image/webp"><img src="img/footer/1.png" alt="facebook"></picture></a></li>
+            <li class="footer__link"><a href="#"><picture><source srcset="img/footer/2.webp" type="image/webp"><img src="img/footer/2.png" alt="twit"></picture></a></li>
+            <li class="footer__link"><a href="#"><picture><source srcset="img/footer/3.webp" type="image/webp"><img src="img/footer/3.png" alt="inst"></picture></a></li>
+         </ul>
+      </div>
+   </div>
+</footer>
+	<script type="text/javascript" src="js/main.js"></script>
 </body>
+
 </html>
