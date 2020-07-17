@@ -15,42 +15,28 @@
 </head>
 
 <body>
-	<header class="header">
-       <div class="container">
-          <div class="header__content">
-             <a class="header__logo" asp-area="" asp-controller="Home" asp-action="Index">@ViewData["ProjectTitle"]</a>
-             <nav class="header__menu main-nav">
-                <button class="main-nav__button"></button>
-                <ul>
-                   <li class="main-nav__item"><a asp-area="" asp-controller="Home" asp-action="Index">Home</a> </li>
-                   <li class="main-nav__item"><a href="#">Razdel2</a> </li>
-                   <li class="main-nav__item"><a href="#">Razdel3</a> </li>
-                   <li class="main-nav__item"><a href="#">Razdel4</a> </li>
-                </ul>
-             </nav>
-          </div>
-       </div>
-    </header>
+    	<header class="header">
+   <div class="container">
+      <div class="header__wrapper">
+         <a href="#" class="header__logo">@ViewData["ProjectTitle"]</a>
+         <nav class="main-nav">
+            <button class="main-nav__button main-nav__button--closed"></button>
+            <ul class="main-nav__list main-nav__list--closed">
+               <li><a href="#" class="main-nav__item">First</a></li>
+               <li><a href="#" class="main-nav__item">Second</a></li>
+               <li><a href="#" class="main-nav__item">Third</a></li>
+               <li><a href="#" class="main-nav__item">Fourth</a></li>
+            </ul>
+         </nav>
+      </div>
+   </div>
+</header>
+
 
 	<main role="main" class="container">
         @RenderBody()
 	</main>
 
-	<footer class="footer">
-       <div class="container">
-          <div class="footer__content">
-             <ul class="footer__copyright copyright">
-                <li class="copyright__item"><a href="#">Terms and conditions</a></li>
-                <li class="copyright__item"><a href="#">Privacy</a></li>
-             </ul>
-             <ul class="footer__links">
-                <li class="footer__link"><a href="#"><picture><source srcset="~/img/footer/1.webp" type="image/webp"><img src="~/img/footer/1.png" alt="facebook"></picture></a></li>
-                <li class="footer__link"><a href="#"><picture><source srcset="~/img/footer/2.webp" type="image/webp"><img src="~/img/footer/2.png" alt="twit"></picture></a></li>
-                <li class="footer__link"><a href="#"><picture><source srcset="~/img/footer/3.webp" type="image/webp"><img src="~/img/footer/3.png" alt="inst"></picture></a></li>
-             </ul>
-          </div>
-       </div>
-    </footer>
 
 	<script type="text/javascript" src="~/js/main.js"></script>
     @RenderSection("Scripts", required: false)
