@@ -2,7 +2,74 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<section class="articles-slider">
+    <div class="container">
+        <h2 class="articles-slider__main-title">Actual articles</h2>
+        <div class="articles-slider__wrap">
+            <div class="articles-slider__main">
+                <div class="articles-slider__item articles-slider__item--active">
+                    <a href="#"><img src="img/article/1.jpg" alt="" class="articles-slider__photo"></a>
+                    <h3><a href="#" class="articles-slider__title">More than just a music festival</a></h3>
+                </div>
+                <div class="articles-slider__item ">
+                    <a href="#"><img src="img/article/2.jpg" alt="" class="articles-slider__photo"></a>
+                    <h3><a href="#" class="articles-slider__title">Life tastes better with coffee</a></h3>
+                </div>
+                <div class="articles-slider__item ">
+                    <a href="#"><img src="img/article/3.jpg" alt="" class="articles-slider__photo"></a>
+                    <h3><a href="#" class="articles-slider__title">American dream</a></h3>
+                </div>
+            </div>
+            <div class="articles-slider__buttons">
+                <button class="articles-slider__btn--prev">
+                    <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 31.49 31.49"
+                        style="enable-background:new 0 0 31.49 31.49;" xml:space="preserve">
+                        <path style="fill:#1E201D;" d="M21.205,5.007c-0.429-0.444-1.143-0.444-1.587,0c-0.429,0.429-0.429,1.143,0,1.571l8.047,8.047H1.111
+                    C0.492,14.626,0,15.118,0,15.737c0,0.619,0.492,1.127,1.111,1.127h26.554l-8.047,8.032c-0.429,0.444-0.429,1.159,0,1.587
+                    c0.444,0.444,1.159,0.444,1.587,0l9.952-9.952c0.444-0.429,0.444-1.143,0-1.571L21.205,5.007z" />
+                    </svg>
+                </button>
+                <button class="articles-slider__btn--next"><svg version="1.1" id="Capa_1"
+                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        viewBox="0 0 31.49 31.49" style="enable-background:new 0 0 31.49 31.49;" xml:space="preserve">
+                        <path style="fill:#1E201D;" d="M21.205,5.007c-0.429-0.444-1.143-0.444-1.587,0c-0.429,0.429-0.429,1.143,0,1.571l8.047,8.047H1.111
+                    C0.492,14.626,0,15.118,0,15.737c0,0.619,0.492,1.127,1.111,1.127h26.554l-8.047,8.032c-0.429,0.444-0.429,1.159,0,1.587
+                    c0.444,0.444,1.159,0.444,1.587,0l9.952-9.952c0.444-0.429,0.444-1.143,0-1.571L21.205,5.007z" />
+                    </svg></button>
+            </div>
+        </div>
+</section>
+
+
+<section class="articles">
+    <h2 class="articles__title visually-hidden">ACTUAL ARTICLES</h2>
+    <div class="container">
+        <div class="articles__wrapper">
+            <article class="articles__item article-main">
+                <a href="#"><img src="img/article/1.jpg" alt="" class="article-main__photo"></a>
+                <p><a href="#" class="article-main__theme">Lifestyle</a></p>
+                <h3><a href="#" class="article-main__title">More than just a music festival </a></h3>
+                <p class="article-main__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    exercitation</p>
+            </article>
+            <article class="articles__item article-main">
+                <a href="#"><img src="img/article/2.jpg" alt="" class="article-main__photo"></a>
+                <p><a href="#" class="article-main__theme">Lifestyle</a></p>
+                <h3><a href="#" class="article-main__title">Life tastes better with coffee</a></h3>
+                <p class="article-main__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    exercitation</p>
+            </article>
+            <article class="articles__item article-main">
+                <a href="#"><img src="img/article/3.jpg" alt="" class="article-main__photo"></a>
+                <p><a href="#" class="article-main__theme">Lifestyle</a></p>
+                <h3><a href="#" class="article-main__title">American dream </a></h3>
+                <p class="article-main__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    exercitation</p>
+            </article>
+        </div>
+    </div>
+</section>
