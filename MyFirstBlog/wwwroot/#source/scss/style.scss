@@ -2,6 +2,7 @@
 @import "header.scss";
 @import "footer.scss";
 @import "normalize.scss";
+@import "articlePage.scss";
 
 // ОГРАНИЧИТЕЛЬ КОНТЕНТА 
 
@@ -268,12 +269,6 @@ body{
       color: #626262;
       padding: 0px 5px;
       line-height: 24px;
-      font-size: 17px;
-   }
-   @media (max-width: 1103px) {
-      font-size: 15px;
-   }
-   @media (max-width: 1002px) {
       font-size: 17px;
    }
    @media (max-width: 820px) {
